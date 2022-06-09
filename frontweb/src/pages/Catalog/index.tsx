@@ -1,10 +1,8 @@
+import Pagination from 'components/Pagination';
 import ProductCard from 'components/ProductCard';
 import { Link } from 'react-router-dom';
 import { Product } from 'types/product';
-<<<<<<< HEAD
-=======
 import './styles.css';
->>>>>>> 6e5f1c4... Catalog title
 
 const Catalog = () => {
   const product: Product = {
@@ -30,7 +28,11 @@ const Catalog = () => {
   };
 
   return (
-    <div className="container my-3">
+    <div className="container my-4 catalog-container">
+      <div className="row catalog-title-container ">
+        <h1>Catalogo de produtos</h1>
+      </div>
+
       <div className="row">
         <div className="col-sm-6 col-lg-4 col-xl-3">
           <Link to="/products/1">
@@ -59,6 +61,7 @@ const Catalog = () => {
           </Link>
         </div>
       </div>
+      <Pagination />
     </div>
   );
 };
