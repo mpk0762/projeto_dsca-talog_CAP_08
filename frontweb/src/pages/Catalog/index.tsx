@@ -1,7 +1,6 @@
 import ProductCard from 'components/ProductCard';
 import { Link } from 'react-router-dom';
 import { Product } from 'types/product';
-
 import './styles.css';
 
 const Catalog = () => {
@@ -45,25 +44,16 @@ const Catalog = () => {
             <ProductCard product={product} />
           </Link>
         </div>
-
         <div className="col-sm-6 col-lg-4 col-xl-3">
           <Link to="/products/1">
             <ProductCard product={product} />
           </Link>
         </div>
-
         <div className="col-sm-6 col-lg-4 col-xl-3">
           <Link to="/products/1">
             <ProductCard product={product} />
           </Link>
         </div>
-
-        <div className="col-sm-6 col-lg-4 col-xl-3">
-          <Link to="/products/1">
-            <ProductCard product={product} />
-          </Link>
-        </div>
-
         <div className="col-sm-6 col-lg-4 col-xl-3">
           <Link to="/products/1">
             <ProductCard product={product} />

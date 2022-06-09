@@ -4,9 +4,9 @@
 .catalogo-title-container {
   margin-bottom: 20px;
 }
-.catalogo-tittle-container h1 {
+.catalogo-title-container h1 {
   font-size: 1em;
-  letter-spacing: 0, 015em;
+  letter-spacing: -0,015em;
   color: #263238;
 }
 
