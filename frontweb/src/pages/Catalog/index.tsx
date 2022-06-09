@@ -1,6 +1,10 @@
 import ProductCard from 'components/ProductCard';
 import { Link } from 'react-router-dom';
 import { Product } from 'types/product';
+<<<<<<< HEAD
+=======
+import './styles.css';
+>>>>>>> 6e5f1c4... Catalog title
 
 const Catalog = () => {
   const product: Product = {
@@ -39,25 +43,16 @@ const Catalog = () => {
             <ProductCard product={product} />
           </Link>
         </div>
-
         <div className="col-sm-6 col-lg-4 col-xl-3">
           <Link to="/products/1">
             <ProductCard product={product} />
           </Link>
         </div>
-
         <div className="col-sm-6 col-lg-4 col-xl-3">
           <Link to="/products/1">
             <ProductCard product={product} />
           </Link>
         </div>
-
-        <div className="col-sm-6 col-lg-4 col-xl-3">
-          <Link to="/products/1">
-            <ProductCard product={product} />
-          </Link>
-        </div>
-
         <div className="col-sm-6 col-lg-4 col-xl-3">
           <Link to="/products/1">
             <ProductCard product={product} />
