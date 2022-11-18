@@ -7,6 +7,7 @@ import { Product } from 'types/product';
 import { AxiosParams } from 'types/vendor/axios';
 import { SpringPage } from 'types/vendor/spring';
 import { BASE_URL } from 'util/requests';
+import CardLoader from './CardLouder';
 import './styles.css';
 
 const Catalog = () => {
@@ -41,7 +42,7 @@ const Catalog = () => {
 
       <div className="row">
         {isLoading ? (
-          <h1>Carregando</h1>
+          <CardLoader/>
         ) : (
           page?.content.map((product) => (
             <div className="col-sm-6 col-lg-4 col-xl-3">
